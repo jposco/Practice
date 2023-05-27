@@ -6,8 +6,7 @@ using namespace std;
 vector<int> solution(vector<int> arr) 
 {
     vector<int> answer;
-    int last = arr.size();
-    for(int i = 1; i<last;i++)
+    for(int i = 1; i<arr.size();i++)
     {
         if(arr.at(i-1) != arr.at(i))
         {
