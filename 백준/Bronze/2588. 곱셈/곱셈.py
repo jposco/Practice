@@ -1,0 +1,7 @@
+x=int(input())
+y=int(input())
+Y= str(y)
+print(x*int(Y[2]))
+print(x*int(Y[1]))
+print(x*int(Y[0]))
+print(x*y)
