@@ -1,12 +1,12 @@
-x, y = map(int, input().split())
-s1 = set()
-s2 = []
-for i in range(x):
-    s1.add(input())
-for i in range(y):
-    s2.append(input())
-cnt=0
-for i in s2:
-    if(i in s1):
-        cnt+=1
-print(cnt)
+n, m = map(int, input().split())
+words = set()
+count = 0
+for i in range(n):
+    word = input()
+    words.add(word)
+    
+for i in range(m):
+    word =input()
+    if word in words:
+        count+=1
+print(count)
