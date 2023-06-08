@@ -27,7 +27,7 @@ vector<int> solution(vector<int> answers) {
     }
     vector<pair<int, int>> comp = {{x, 1},{y, 2},{z, 3}};
     sort(comp.begin(), comp.end(), compare);
-   answer.push_back(comp[0].second);
+    answer.push_back(comp[0].second);
     for (int i = 1; i < 3; i++) {
         if (comp[i].first == comp[0].first) {
             answer.push_back(comp[i].second);
@@ -35,6 +35,6 @@ vector<int> solution(vector<int> answers) {
             break;
         }
     }
-sort(answer.begin(), answer.end());
+
     return answer;
 }
